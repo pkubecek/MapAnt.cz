@@ -26,18 +26,13 @@
 <div id="map"></div>
 
 <script>
-    // 4. Inicializace mapy
-    // Tyto souřadnice (center) a zoom (13) musíte upravit!
-    // Najděte si na mapy.cz střed vaší oblasti a zkopírujte WGS-84 souřadnice.
-    var map = L.map('map').setView([50.5464125, 16.2955214], 15); // Příklad: [lat, lon], zoom
+    var map = L.map('map').setView([50.5464125, 16.2955214], 15);
 
-    // 5. Přidání vaší vlastní vrstvy dlaždic
-    // Cesta 'Tiles/{z}/{x}/{y}.png' musí odpovídat vaší struktuře.
     L.tileLayer('Tiles/{z}/{x}/{y}.png', {
-        maxZoom: 16, // Musí odpovídat vašemu gdal2tiles
-        minZoom: 10, // Musí odpovídat vašemu gdal2tiles
+        maxZoom: 18, 
+        minZoom: 10, 
         attribution: '© MapAnt.cz',
-        opacity: 0.8 // Můžete nastavit průhlednost
+        opacity: 0.8 
     }).addTo(map);
 
     // 6. (Volitelné) Přidání podkladové mapy (OpenStreetMap)
