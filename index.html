@@ -3,13 +3,12 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Moje OMap Mapa</title>
+    <title>MapAnt.cz</title>
     
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     
     <style>
-        /* 2. Styl, který roztáhne mapu na celou obrazovku */
         html, body {
             height: 100%;
             margin: 0;
@@ -34,11 +33,9 @@
         attribution: '© MapAnt.cz',
         opacity: 0.8 
     }).addTo(map);
-
-    // 6. (Volitelné) Přidání podkladové mapy (OpenStreetMap)
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
         attribution: '&copy; OpenStreetMap contributors',
-        opacity: 0.5, // Podklad bude mírně průhledný
+        opacity: 1, // Podklad bude mírně průhledný
         zIndex: -1 // Dáme podklad pod vaši mapu
     }).addTo(map);
 
