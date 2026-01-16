@@ -35,6 +35,8 @@
     }).addTo(map);
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
         attribution: '&copy; OpenStreetMap contributors',
+        maxZoom: 17, 
+        minZoom: 10, 
         opacity: 1, // Podklad bude mírně průhledný
         zIndex: -1 // Dáme podklad pod vaši mapu
     }).addTo(map);
