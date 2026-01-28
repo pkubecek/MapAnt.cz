@@ -31,13 +31,13 @@
         maxZoom: 17, 
         minZoom: 10, 
         attribution: '© MapAnt.cz',
-        opacity: 0,15
+        opacity: 1
     }).addTo(map);
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
         attribution: '&copy; OpenStreetMap contributors',
         maxZoom: 17, 
         minZoom: 10, 
-        opacity: 0.5, // Podklad bude mírně průhledný
+        opacity: 0.15, // Podklad bude mírně průhledný
         zIndex: -1 // Dáme podklad pod vaši mapu
     }).addTo(map);
 
